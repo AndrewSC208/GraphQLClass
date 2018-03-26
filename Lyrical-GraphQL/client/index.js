@@ -1,3 +1,4 @@
+import './style/style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-client';
@@ -20,7 +21,7 @@ const Root = () => {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={SongList}/>
-          <Route path="song/new" component={SongCreate} />
+          <Route path="songs/new" component={SongCreate} />
         </Route>
       </Router>
     </ApolloProvider>
