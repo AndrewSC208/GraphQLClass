@@ -4,17 +4,16 @@ import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-client';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import { ApolloProvider } from 'react-apollo';
-
-/*==COMPONENTS==*/
+/**
+ * CONTAINERS
+ */
 import App        from './components/App';
 import SongList   from './components/SongList';
 import SongCreate from './components/SongCreate';
-
-/*
+/**
  * Might want to add some options to config the client a bit more
  */
 const client = new ApolloClient({});
-
 const Root = () => {
   return (
     <ApolloProvider client={client}>
